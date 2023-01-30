@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang="zh">
+  <head>
+    <title>vue自定义长按指令</title>
+    <meta name="keywords" content="vue, 自定义指令, 长按指令" />
+    <meta name="description" content="vue自定义长按指令" />
+    <meta name="viewport" content="width=device-width,maximum-scale=1,user-scalable=no" />
+    <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
+    <script src="./index.js"></script>
+  </head>
+  <body>
+    <div id="app">
+      <button v-longpress:800="doBgChange">长按试试?</button>
+    </div>
+  </body>
+</html>
