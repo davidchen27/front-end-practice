@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="zh">
+  <head>
+    <meta charset="utf-8" />
+    <title>图片加载失败处理(onerror方式)</title>
+    <meta name="keywords" content="图片加载失败处理, onerror, javascript" />
+    <meta name="descripition" content="图片加载失败处理(onerror的方式)" />
+    <link href="./index.css" rel="stylesheet" />
+    <script src="./useLazyLoad.js" type="module"></script>
+  </head>
+  <body>
+    <div class="page-wrapper">
+      <div class="img-box">
+        <img data-src="https://w.wallhaven.cc/full/l8/wallhaven-l83o92.jpg" alt="桃园风光" class="img" onerror="this.classList.add('error')" />
+        <img data-src="https://w.wallhaven.cc/full/e7/wallhaven-e7jj6r@.jpg" alt="镜门" class="img" onerror="this.classList.add('error')" />
+        <img data-src="https://w.wallhaven.cc/full/9m/wallhaven-9mjoy1.png" alt="樱花树下" class="img" onerror="this.classList.add('error')" />
+        <img data-src="https://w.wallhaven.cc/full/j3/wallhaven-j3m8y5@.png" alt="奇怪的星空" class="img" onerror="this.classList.add('error')" />
+        <img data-src="https://w.wallhaven.cc/full/j3/wallhaven-j3g7yy.jpg" alt="星系" class="img" onerror="this.classList.add('error')" />
+      </div>
+    </div>
+  </body>
+</html>

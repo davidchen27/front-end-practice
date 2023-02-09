@@ -1,6 +1,7 @@
 export default class LazyLoad {
-  constructor(elArr){
+  constructor(elArr, options = {}){
     this.elArr = elArr
+    this.options = options
   }
 
   init(){
@@ -13,7 +14,7 @@ export default class LazyLoad {
           target.removeAttribute('data-src')
         }
       })
-    })
+    }, this.options)
     this.elArr.forEach(el => this.observer.observe(el))
   }
 }

@@ -1,0 +1,28 @@
+html, body{
+  height: 100%;
+}
+body{
+  margin: 0;
+}
+.page-wrapper{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+}
+.img-box{
+  height: 800px;
+  width: 50%;
+  border-radius: 8px;
+  box-shadow: 0 0 6px rgba(0, 0, 0, 0.06);
+  overflow: auto;
+}
+.img-box .img{
+  display: block;
+  width: 100%;
+  height: auto;
+  min-height: 300px;
+}
+.img-box .img.error{
+  background-color: red;
+}
