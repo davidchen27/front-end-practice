@@ -1,0 +1,36 @@
+html, body{
+  height: 100%;
+}
+body{
+  margin: 0;
+}
+.page-wrapper{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+}
+.scroll-view{
+  display: flex;
+  width: 400px;
+  height: 300px;
+  border-radius: 8px;
+  border: 1px solid #e0e0e0;
+  overflow: auto;
+  scroll-snap-type: x mandatory;
+}
+.scroll-view .box-item{
+  flex-shrink: 0;
+  width: 400px;
+  height: 100%;
+  scroll-snap-align: center;
+}
+.box-item:nth-child(1){
+  background-color: #ff7979;
+}
+.box-item:nth-child(2){
+  background-color: #6ab04c;
+}
+.box-item:nth-child(3){
+  background-color: #f0932b;
+}
