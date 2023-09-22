@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>代码雨特效</title>
+  <script src="../libs/tools.js"></script>
+  <script src="./code-rain.js"></script>
+  <style>
+    html, body {
+      padding: 0;
+      width: 100%;
+      height: 100%;
+      margin: 0;
+    }
+    .wrapper {
+      height: 100%;
+    }
+  </style>
+</head>
+<body>
+  <div class="wrapper"></div>
+  <script>
+    const codeRain = new CodeRain('.wrapper')
+    codeRain.init()
+  </script>
+</body>
+</html>
