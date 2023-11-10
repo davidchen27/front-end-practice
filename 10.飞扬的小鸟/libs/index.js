@@ -1,0 +1,1 @@
+const canvasEl = document.getElementById('canvas')
