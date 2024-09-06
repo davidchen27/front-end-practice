@@ -1,0 +1,52 @@
+html, body {
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  box-sizing: border-box;
+}
+body {
+  display: grid;
+  place-items: center;
+  font-family: 'LXGW WenKai Screen R', sans-serif;
+}
+::highlight(find-highlight) {
+  background-color: skyblue;
+}
+.highlight-main-content {
+  padding: 15px;
+  width: 30vw;
+  font-size: 15px;
+  border-radius: 10px;
+  border: 1px solid #e5e5e5;
+}
+.highlight-title {
+  margin-bottom: 16px;
+  font-size: 18px;
+  font-weight: bold;
+  text-align: center;
+}
+.highlight-opera-box {
+  display: flex;
+  align-items: center;
+}
+#highlight-text-input {
+  padding: 8px 12px;
+  border-radius: 4px;
+  font-family: 'LXGW WenKai Screen R', sans-serif;
+  border: 1px solid #e5e5e5;
+  background-color: #ffffff;
+  outline: none;
+  transition: all 0.3s;
+}
+#highlight-text-input::placeholder {
+  color: #999999;
+  font-weight: normal;
+}
+#highlight-text-input:focus {
+  border-color: #1890ff;
+}
+.highlight-text__inner {
+  color: #333333;
+  line-height: 1.5em;
+  word-break: break-all;
+}
